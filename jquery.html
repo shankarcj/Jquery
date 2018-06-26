@@ -1,0 +1,60 @@
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+   $("#show").click(function(){
+     $("#saas").show(1000);
+   });
+    $("#hide").click(function(){
+      $("#saas").hide(500);
+});
+    $("#toggle").click(function(){
+      $("#saas").toggle();
+    });
+    $("#slideup").dblclick(function(){
+      $("#saas").slideUp();
+    });
+    $("#slidedown").dblclick(function(){
+      $("#saas").slideDown();
+    });
+    $("#slidetogg").dblclick(function(){
+      $("#saas").slideToggle();
+    });
+    $("#fadeout").mouseenter(function(){
+      $("#saas").fadeOut("fast");
+    });
+    $("#fadein").mouseenter(function(){
+      $("#saas").fadeIn("fast");
+    });
+    $("#fadetogg").mouseenter(function(){
+      $("#saas").fadeToggle("fast");
+    });
+});
+</script>
+
+
+
+</head>
+<body>
+
+
+<div >
+  <img id="saas" src="bootstrap-stack.png" style="width:50%">
+</div>
+<button id="show"> show </button>
+<button id="hide"> hide </button>
+<button id="toggle"> toggle</button>
+<button id="slideup">Slideup</button>
+<button id="slidedown">slidedown</button>
+<button id="slidetogg">slidetogg</button>
+<button id="fadein">fadein</button>
+<button id="fadeout">fadeout</button>
+<button id="fadetogg">fadetogg</button>
+<button id="animater">animater</button>
+
+
+</body>
+</html>
